@@ -1,0 +1,66 @@
+<html>
+<head>
+<script src="../Javascript/User_Regi.js" language="javascript" type="text/javascript">
+</script>
+<link href="../css/cssall.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<?php include "header.php";?>
+<center>
+<form id="admin_regi_frm" method="post" name="admin_regi_frm" action="../admin/Admin_Regi_check.php">
+<legend align="center"><p id="title_ft">REGISTERATION  FOR  NEW ADMIN</p></legend>
+<table id="TableF">
+<tr>
+	<td width="143" id="textF" align="right">First Name : </td>
+	<td width="232"><input type="text" name="fnm" id="fname"/></td>
+</tr>
+
+<tr>
+	<td id="textF" align="right">Last Name : </td>
+	<td> <input type="text" name="lnm" id="lname" /></td>
+</tr>
+
+<tr>
+	<td id="textF" align="right">Address : </td>
+	<td><textarea rows="5" name="add" id="addrs"></textarea> </td>
+</tr>
+
+<tr>
+	<td id="textF" align="right">City : </td>
+	<td><input type="text" name="ct" id="cty"/></td>
+</tr>
+<tr>
+	<td id="textF" align="right"> Country : </td>
+	<td> <input type="text" name="cntry"  id="contry"/></td>
+</tr>
+<tr>
+	<td id="textF" align="right">Contact No. :</td>
+	<td><input type="text" name="cono"  id="cnt" onKeyPress='return digit();' /></td>
+</tr>
+<tr>
+	<td id="textF" align="right">E-mail ID : </td>
+	<td><input type="text" name="eml" id="e-ml" /></td>
+</tr>
+<tr>
+	<td id="textF" align="right">User Name :</td>
+	<td><input type="text" name="user_nm" id="uname"/></td>
+</tr>
+<tr>
+	<td id="textF" align="right">Password :</td>
+	<td><input type="password" name="pass" id="psw"/></td>
+</tr>
+<tr>
+	<td id="textF" align="right">Confirm Password :</td>
+	<td><input type="password" name="cfrm_pass" id="conpsw" onBlur='return check();'></td>
+</tr>
+<tr>
+	<td colspan="2" align="center"><input type="submit" value="SUBMIT" onClick='return Null();' id="Button" />
+	<input type="reset"  name="reset" value="RESET" id="Button"/></td>
+</tr>
+</table>
+</form>
+<a href="../index.php" style="text-decoration:none; font-size:20px"><b>HOME</b></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<?php include"footer.php";?>
+</center>
+</body>
+</html>
